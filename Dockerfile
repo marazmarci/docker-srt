@@ -5,7 +5,7 @@ RUN apt-get update -y && \
     git clone --depth 1 https://github.com/Haivision/srt.git && \
     cd /root/srt && \
     ./configure && \
-    make && \
+    make install && \
     apt-get clean
 
-ENTRYPOINT ["/root/srt/srt-live-transmit"]
+ENTRYPOINT ["/usr/local/bin/srt-live-transmit"]
