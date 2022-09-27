@@ -7,6 +7,7 @@ RUN buildDependencies="git tclsh pkg-config cmake libssl-dev build-essential" &&
     cd /root/srt && \
     ./configure && \
     make install && \
+    rm -r /root/srt && \
     apt-get purge -y --auto-remove $buildDependencies && \
     apt-get clean
 
