@@ -4,10 +4,11 @@ RUN buildDependencies="git tclsh pkg-config cmake libssl-dev build-essential" &&
     apt-get update -y && \
     apt-get install -y $buildDependencies && \
     git clone --depth 1 https://github.com/Haivision/srt.git && \
-    cd /root/srt && \
+    cd srt && \
     ./configure && \
     make install && \
-    rm -r /root/srt && \
+    cd .. && \
+    rm -r srt && \
     rm -rf /var/lib/apt/lists/* && \
     apt-get purge -y --auto-remove $buildDependencies && \
     apt-get clean
