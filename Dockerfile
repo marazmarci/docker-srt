@@ -10,6 +10,4 @@ RUN apt-get update -y && \
     make && \
     apt-get clean
 
-RUN apt-get clean
-
-ENTRYPOINT ["/root/srt_sources/srt/stransmit"]
+ENTRYPOINT ["/root/srt_sources/srt/srt-live-transmit"]
