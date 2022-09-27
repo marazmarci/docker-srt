@@ -2,7 +2,7 @@
 # by Jordi Cenzano
 # VERSION               1.0.0
 
-FROM ubuntu:16.04
+FROM debian:stable-slim
 MAINTAINER jordi.cenzano@gmail.com
 
 # Update
