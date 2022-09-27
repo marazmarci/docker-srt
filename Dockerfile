@@ -2,12 +2,7 @@ FROM debian:stable-slim
 
 RUN apt-get update -y
 
-RUN apt-get install curl -y
-RUN apt-get install unzip -y
-RUN apt-get install wget -y
-RUN apt-get install git -y
-
-RUN apt-get install tclsh pkg-config cmake libssl-dev build-essential -y
+RUN apt-get install git tclsh pkg-config cmake libssl-dev build-essential -y
 
 RUN mkdir -p /root/srt_sources && \
   cd /root/srt_sources && \
