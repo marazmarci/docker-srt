@@ -8,9 +8,6 @@ MAINTAINER jordi.cenzano@gmail.com
 # Update
 RUN apt-get update -y
 
-# Upgrade
-RUN apt-get upgrade -y
-
 # Install curl
 RUN apt-get install curl -y
 
