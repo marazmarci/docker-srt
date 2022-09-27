@@ -3,7 +3,6 @@
 # VERSION               1.0.0
 
 FROM debian:stable-slim
-MAINTAINER jordi.cenzano@gmail.com
 
 # Update
 RUN apt-get update -y
